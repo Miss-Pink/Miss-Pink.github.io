@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Magazine Subscripton
+    </title>
+</head>
+    <a href="index.html">Go to Index Page</a>
+    <body bgcolor=#ffcccc>
+    <body>
+        <header>
+            <h1><strong><center>Lina's Magazine Subscription Form</center></strong></h1> 
+        </header>
+        
+       <form name="donationForm" id="donationForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+        
+       <h2><strong>Shipping/Billing Address</strong></h2>
+       
+        <table border="1">
+        <tr>
+            <th colspan="2">Address Information</th>
+        </tr>
+  
+            <tr>
+                <th>First Name</th>
+                <th><input type="text" name="FirstName"></th>
+            </tr>
+            
+            <tr>
+                <th>Last Name</th>
+                <th><input type="text" name="LastName"></th>
+            </tr>
+            
+            <tr>
+                <th>E-mail Address</th>
+                <th><input type="text" name="E-mailAddress"></th>
+            </tr>
+            
+            <tr>
+                <th>Street Address</th>
+                <th><input type="text" name="StreetAddress"></th>
+            </tr>
+            
+            <tr>
+                <th>City</th>
+                <th><input type="text" name="City"></th>
+            </tr>
+            
+            <tr>
+                <th>State</th>
+                <th><input type="text" name="State"></th>
+            </tr>
+            
+            <tr>
+                <th>Zip Code</th>
+                <th><input type="text" name="ZipCode"></th>
+            </tr>
+        </table>
+       
+       <h2><strong>Select Magazine(s) to Subscribe to:</strong></h2>
+       <input type="checkbox" name="Newsweek">Newsweek<br/>
+       <input type="checkbox" name="Time">Time<br/>
+       <input type="checkbox" name="SportsIllustrated">Sports Illustrated<br/>
+       <input type="checkbox" name="InternetWorld">Internet World<br/>
+       
+       <h2><strong>Payment Method</strong></h2>
+    <table border="1">
+       <tr>
+       <th colspan="2">Payment Information</th>
+       </tr>
+       
+       <th><strong>Payment Option</strong></th>
+       <th><select name="Payment Options">
+            <option> </option>
+            <option>Bill by mail</option>
+            <option>Pay by credit card online</option>
+       </select>
+       </th>
+       
+       <tr>
+       <th><strong>Credit Card Type</strong></th>
+
+        <th align="left">
+        <input type="radio" name="credit" value="1">Visa<br/>
+        <input type="radio" name="credit" value="2">Master Card<br/>
+        <input type="radio" name="credit" value="3">Discover<br/>
+        <input type="radio" name="credit" value="4">Other<br/></th>
+        </tr>
+       
+        
+            <tr>
+                <th>Credit Card Number</th>
+                <th><input type="text" name="CreditCardNumber"></th>
+            </tr>
+            
+            <tr>
+                <th>Expiration Date</th>
+                <th><select name="Month">
+                    <option>
+                    <option>01 - Jan.
+                    <option>02 - Feb.
+                    <option>03 - March
+                    <option>04 - April
+                    <option>05 - May
+                    <option>06 - June
+                    <option>07 - July
+                    <option>08 - Aug.
+                    <option>09 - Sept.
+                    <option>10 - Oct.
+                    <option>11 - Nov.
+                    <option>12 - Dec.
+                </select> / 
+
+                <select name="Year">
+                    <option>
+                    <option>2016
+                    <option>2017
+                    <option>2018
+                    <option>2019
+                    <option>2020
+                    <option>2021
+                    <option>2022
+                    <option>2023
+                    <option>2024
+                    <option>2025
+                    <option>2026
+                    <option>2027
+                </select></th>
+            </tr>
+            
+            <tr>
+                <th>CVV Number</th>
+                <th><input type="text" name="CreditCardNumber"></th>  
+            </tr> 
+    </table>
+        
+        <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+       </body>
+    </body>
+</html>

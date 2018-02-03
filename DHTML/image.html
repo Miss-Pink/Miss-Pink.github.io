@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lina's Index Page</title>
+    </head>
+    
+    <a href="index.html">Go to Index Page</a>
+    <body bgcolor=#ffcccc>
+    
+    <body>
+       
+        <header>
+            <h1><strong><center>Compressing & Mapping Images</center></strong></hl>
+        </header>
+        
+        <center><table>
+            <tr>
+                <td align="center"><h3>Original Image: 481 KB</h3></td>    
+                <td align="center"><h3>Compressed Image: 212 KB</h3></td>
+            </tr>
+            
+            <tr>  
+                <td><img width="450" height="300" border="1" src="puffball.png" alt="puffball"></td>
+                <td><img width="450" height="300" border="1" src="puffball1.png" alt="puffball"></td>
+            </tr>
+        </table>
+        
+        <h3>Image Mapping</h3>
+        <img id="puffball" src="imagemap_puffball.png" border="1" width="890" height="600" usemap="#mapit" alt="ImagemapPuffball" />
+        <map name="mapit" id="puffball">
+            <area shape="circle" coords="314,319, 130" alt="IndexPage" href="index.html" />
+            <area shape="rect" coords="510,323 ,890,600" alt="SamePage" href='#'/>
+            <area shape="poly" coords="62,22,196,23,217,105,179,169,74,173,39,100" alt="JavascriptPage" href="javascript.html" />
+        </map>
+      </center> 
+    </body>
+</html>

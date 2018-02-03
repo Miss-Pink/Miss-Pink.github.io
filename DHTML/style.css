@@ -1,0 +1,96 @@
+h1 {
+    color: #ff6699;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0em;
+    font-family: "Comic Sans MS";
+}
+
+p {
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+a {
+    color: #000000;
+}
+
+.marg {
+    margin-top: 270px;
+}
+
+body {
+    font-family: "Comic Sans MS";
+    background-color: #ffff99;
+}
+
+.container{
+
+	/* Set a counter named cnt to 0 */
+	counter-reset: cnt;
+
+	position:relative;
+	text-align:center;
+	padding:20px 0;
+	width:420px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+/* You can style pseudo elements and give them content,
+   as if they were real elements on the page */
+
+.container::before{
+	display: block;
+	content:'Hover your mouse over the boxes to read some quotes!';
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding:15px;
+}
+
+.container span{
+	display:inline-block;
+	padding:5px 9px;
+	background-color:#ff6699;
+	color:#ffff99;
+	border-radius:4px;
+	margin:3px;
+	cursor:default;
+}
+
+/* Create a counter with a pseudo element */
+
+.container span::after{
+
+	/* Every time this rule is executed, the 
+	   counter value is increased by 1 */
+	counter-increment: cnt;
+
+	/* Add the counter value as part of the content */
+	content:" #" counter(cnt);
+
+	display:inline-block;
+	padding:4px;
+}
+
+/* Pseudo elements can even access attributes of their parent element */
+
+.container span::before{
+	position: absolute;
+	margin-top: 140px;
+	left: 0;
+	width:100%;
+	content:attr(data-title);
+	color:#000;
+    font-size:20px;
+
+	opacity:0;
+
+	/* Animate the transitions */
+	transition:opacity 0.4s;
+}
+
+.container span:hover::before{
+	opacity:1;
+}

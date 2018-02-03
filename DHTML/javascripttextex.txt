@@ -1,0 +1,5 @@
+    
+    <center><script type="text/javascript"> //Example of javascript output text
+        var someText = "JavaScript Text Onput Example"
+        document.write(someText)     
+    </script></center>

@@ -1,0 +1,17 @@
+        <style type="text/css">
+            .fieldset-auto-width{
+                display: inline-block;
+            }
+        </style>
+        <fieldset class="fieldset-auto-width"><legend><strong>Magazine(s) Subscription</strong></legend>
+        <table border="1" cellspacing="0" cellpadding="5">
+
+        <td><label><input type="checkbox" name="magazine" value="Newsweek">Newsweek</label>
+
+        <td><label><input type="checkbox" name="magazine" value="Time">Time</label>
+
+        <td><label><input type="checkbox" name="magazine" valueE="SportsIllustrated">Sports Illustrated</label>
+
+        <td><label><input type="checkbox" name="magazine" value="InternetWorld">Internet World</label>
+        </table>
+        </fieldset>
